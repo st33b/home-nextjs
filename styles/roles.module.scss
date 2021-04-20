@@ -1,0 +1,82 @@
+.Employer {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0.5rem 0 1.5rem;
+  .Name {
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      padding: 0.25rem 0;
+      margin-bottom: 0;
+      text-align: center
+    }
+  }
+  .Role {
+    .Title {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin: 0.5rem 0.5rem;
+    }
+    .Dates {
+      font-size: 1.1rem;
+      font-weight: 300;
+      padding: 0;
+      margin: 0.5rem 0.5rem;
+      text-align: right;
+    }
+    .Details {
+      margin: 0 0.5rem;
+      .Responsibilities, .Notable {
+        margin-bottom: 0.5rem;
+        h4 {
+          font-size: 1.2rem;
+          font-weight: 400;
+          padding: 0.25rem 0;
+          margin-bottom: 0.25rem;
+          font-style: italic;
+        }
+        p {
+          margin-bottom: 0.25rem;
+        }
+        ul {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .RoleSeparator {
+    width: 50%;
+  }
+}
+
+@media (min-width: 576px) {
+  .Employer {
+    .Name {
+      background-color: #ddd;
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+    .Role {
+      .Header {
+        background-color: #eee;
+      }
+      .Details {
+        .Title {
+          background-color: #eee;
+        }
+        .Dates {
+          padding-top: 0.5rem;
+        }
+        .Responsibilities {
+        }
+        .Notable {
+
+        }
+      }
+    }
+  }
+
+}

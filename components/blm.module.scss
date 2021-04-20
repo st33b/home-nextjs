@@ -1,0 +1,36 @@
+.BlackLivesMatter {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0.5rem;
+
+  h3 {
+    background-color: #000;
+    padding: 0.25rem 0;
+    //font-variant: small-caps;
+    font-size: 1.2rem;
+
+    a, a:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .WeightA {
+    font-weight: 200;
+    //background-color: #fff;
+    //color: #000;
+  }
+  .WeightB {
+    font-weight: 500;
+    //background-color: #000;
+    //color: #fff;
+  }
+}
+
+@media (min-width: 576px) {
+  .BlackLivesMatter {
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.Contact {
+  .Button {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+  .Button:first-child {
+    margin-left: 0;
+  }
+  .Button:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .Contact {
+  }
+}
