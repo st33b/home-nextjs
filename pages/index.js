@@ -1,5 +1,6 @@
 import Layout from '../components/layout';
 
+import Navigation from '../components/navigation';
 import BLM from '../components/blm';
 import Contact from '../components/contact';
 import Omada from '../components/omada';
@@ -23,6 +24,8 @@ const index = () => {
         {/*<h2 className={styles.SectionHeader}>*/}
         {/*  Experience*/}
         {/*</h2>*/}
+
+        <Navigation />
 
         <div className={styles.Experience}>
           <Omada />

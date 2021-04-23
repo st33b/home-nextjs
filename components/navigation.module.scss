@@ -1,0 +1,17 @@
+.Navigation {
+  margin-top: 0.5rem;
+
+  .NavItem {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .Navigation {
+    .NavItem {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
