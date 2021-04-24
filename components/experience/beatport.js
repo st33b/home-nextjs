@@ -1,24 +1,24 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
 
-import styles from '../styles/roles.module.scss';
+import styles from '../../styles/roles.module.scss';
 
-const lumos = () => {
+const beatport = () => {
   return (
     <div className={styles.Employer}>
       <div className={styles.Name}>
         <h2>
-          Lumos Labs
+          Beatport
         </h2>
       </div>
 
       <div className={styles.Role}>
         <div className={styles.Header + " d-sm-flex justify-content-between"}>
           <h3 className={styles.Title}>
-            Senior Software Engineer
+            Database Developer
           </h3>
           <h5 className={styles.Dates}>
-            2015-2016
+            2012-2013
           </h5>
         </div>
         <div className={styles.Details}>
@@ -28,7 +28,7 @@ const lumos = () => {
                 Responsibilities
               </h4>
               <p>
-                I was part of the Platform team, responsible for building and supporting payment systems, event and analytics tracking, transactional and marketing emails, and the customer service portal, amongst others.
+                Full-stack developer on several customer-facing projects and RESTful APIs, with a focus on database integration: schema design, data modeling, and optimizing our applications' and APIs' integration with the data layer.
               </p>
             </Col>
           </Row>
@@ -38,4 +38,4 @@ const lumos = () => {
   );
 };
 
-export default lumos;
+export default beatport;
