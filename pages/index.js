@@ -7,6 +7,7 @@ import Contact from '../components/contact';
 import Experience from '../components/experience/experience';
 import Education from '../components/education';
 import Skills from '../components/skills';
+import OnTheSide from '../components/on_the_side/onTheSide';
 
 import styles from '../styles/index.module.scss'
 
@@ -17,11 +18,12 @@ const index = () => {
         <BLM />
         <Contact />
 
-        <Tabs defaultActiveKey="experience" className={styles.Menu + " d-flex justify-content-between justify-content-sm-center"}>
+        <Tabs defaultActiveKey="side_projects" className={styles.Menu + " d-flex justify-content-between justify-content-sm-center"}>
           <Tab title="Experience" eventKey="experience" tabClassName={styles.MenuItem}>
             <Experience />
           </Tab>
           <Tab title="On the Side" eventKey="side_projects" tabClassName={styles.MenuItem}>
+            <OnTheSide />
           </Tab>
           <Tab title="Skills" eventKey="skills" tabClassName={styles.MenuItem}>
             <Skills />
