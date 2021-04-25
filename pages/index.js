@@ -6,6 +6,7 @@ import BLM from '../components/blm';
 import Contact from '../components/contact';
 import Experience from '../components/experience/experience';
 import Education from '../components/education';
+import Skills from '../components/skills';
 
 import styles from '../styles/index.module.scss'
 
@@ -23,6 +24,7 @@ const index = () => {
           <Tab title="On the Side" eventKey="side_projects" tabClassName={styles.MenuItem}>
           </Tab>
           <Tab title="Skills" eventKey="skills" tabClassName={styles.MenuItem}>
+            <Skills />
           </Tab>
           <Tab title=".edu" eventKey="education" tabClassName={styles.MenuItem}>
             <Education />
