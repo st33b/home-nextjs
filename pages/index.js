@@ -18,7 +18,7 @@ const index = () => {
         <BLM />
         <Contact />
 
-        <Tabs defaultActiveKey="side_projects" className={styles.Menu + " d-flex justify-content-between justify-content-sm-center"}>
+        <Tabs defaultActiveKey="experience" className={styles.Menu + " d-flex justify-content-between justify-content-sm-center"}>
           <Tab title="Experience" eventKey="experience" tabClassName={styles.MenuItem}>
             <Experience />
           </Tab>

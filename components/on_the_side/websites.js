@@ -15,17 +15,12 @@ const websites = () => {
           </Card.Title>
         </Card.Header>
         <Card.Body>
-          <Card.Text>
-            I maintain the informational websites for several IGBO-affiliated bowling tournaments. (You'll see some common design elements, since—in all honesty—I'm not a visual designer.)
-          </Card.Text>
           <Row>
             <Col xs={12} md={6}>
-              <img className="img-fluid"
-                   src="/images/bigd_example.jpg"
-                   alt="Thumbnail of one of my websites"
-              />
-            </Col>
-            <Col xs={12} md={6}>
+              <Card.Text>
+                I maintain the informational websites for several IGBO-affiliated bowling tournaments. (You'll see some
+                common design elements, since—in all honesty—I'm not a visual designer.)
+              </Card.Text>
               <ul className={styles.ExampleList}>
                 <li>
                   <a href="https://www.bigdclassic.com/">
@@ -43,6 +38,12 @@ const websites = () => {
                   </a>
                 </li>
               </ul>
+            </Col>
+            <Col xs={12} md={6}>
+              <img className="img-fluid"
+                   src="/images/bigd_example.jpg"
+                   alt="Thumbnail of one of my websites"
+              />
             </Col>
           </Row>
         </Card.Body>

@@ -45,7 +45,7 @@ const omada = () => {
                 <li>Built and staffed two full teams</li>
                 <li>Grew engineers into senior engineers, team leads, and managers.</li>
                 <li>
-                  Moved to Atlanta to build Omada's engineering presence in our new office.
+                  Moved to Atlanta to build Omada's engineering presence in our new office (pre-pandemic).
                 </li>
                 <li>
                   Promoted from Manager to Senior Manager in 2019.
