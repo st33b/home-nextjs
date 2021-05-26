@@ -1,13 +1,14 @@
 .SideProjects {
+
+  .Project {
+    margin-top: 0.5rem;
+
+    .Title {
+      margin-bottom: 0;
+    }
+    .ExampleList {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.Project {
-  margin-bottom: 1rem;
-
-  .Title {
-    margin-bottom: 0;
-  }
-  .ExampleList {
-    margin-bottom: 0;
-  }
-}
