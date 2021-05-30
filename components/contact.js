@@ -55,7 +55,7 @@ const contact = () => (
             size="sm"
             href="/resume.pdf"
             aria-label="Download a PDF version of my resume"
-            className={styles.Button}
+            className={styles.Button + " d-none d-lg-block"}
             >
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-pdf"
            viewBox="0 0 16 16">
