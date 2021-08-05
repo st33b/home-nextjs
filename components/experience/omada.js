@@ -15,10 +15,36 @@ const omada = () => {
       <div className={styles.Role}>
         <div className={styles.Header + " d-sm-flex justify-content-between"}>
           <h3 className={styles.Title}>
+            Software Architect
+          </h3>
+          <h5 className={styles.Dates}>
+            2021-present
+          </h5>
+        </div>
+        <div className={styles.Details}>
+          <Row>
+            <Col xs={12}
+                 className={styles.Responsibilities}>
+              <h4>
+                Responsibilities
+              </h4>
+              <p>
+                Serving as the connective tissue between Omada's business and technical teams, with a focus on patient identity at Omada: ensuring a coherent and complete view of the patient as a whole person, the better to support Omada's multi-product platform offering. This includes interoperability within Omada's ecosystem as well as externally, such as EHR data sharing.
+              </p>
+            </Col>
+          </Row>
+        </div>
+      </div>
+
+      <hr className={styles.RoleSeparator}/>
+
+      <div className={styles.Role}>
+        <div className={styles.Header + " d-sm-flex justify-content-between"}>
+          <h3 className={styles.Title}>
             Senior Manager, Engineering
           </h3>
           <h5 className={styles.Dates}>
-            2018-present
+            2018-2021
           </h5>
         </div>
         <div className={styles.Details}>
@@ -55,7 +81,7 @@ const omada = () => {
                   <strong>
                     Out@Omada
                   </strong>
-                  {' '}employee resource group (ERG), 2020-present.
+                  {' '}employee resource group (ERG), 2020-2021.
                 </li>
               </ul>
             </Col>

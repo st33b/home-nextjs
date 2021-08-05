@@ -16,7 +16,7 @@ const pageHeader = () => {
           Software Engineer
         </li>
         <li>
-          Manager
+          Leader
         </li>
         <li>
           Cat Dad
