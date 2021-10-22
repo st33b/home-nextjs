@@ -12,7 +12,7 @@ const blm = () => {
              width={53} />
       <h3>
         <a href="https://blacklivesmatter.com/" target='_new'>
-          <span className="sr-only">Black Lives Matter</span>
+          <span className="visually-hidden">Black Lives Matter</span>
           <span className={styles.WeightB + " aria-hidden"}>#</span>
           <span className={styles.WeightA + " aria-hidden"}>Black</span>
           <span className={styles.WeightB + " aria-hidden"}>Lives</span>

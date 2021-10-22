@@ -22,9 +22,9 @@ const layout = ({children}) => {
         </main>
       </Container>
 
-      {/*<Container className={styles.Container}>*/}
-      {/*  <SiteFooter/>*/}
-      {/*</Container>*/}
+      <Container className={styles.Container}>
+        <SiteFooter/>
+      </Container>
     </>
   )
     ;

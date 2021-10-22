@@ -9,7 +9,7 @@ const siteFooter = () => {
       <Card bg="light">
         <Card.Body>
           <p>
-            <span className="sr-only">Copyright</span>
+            <span className="visually-hidden">Copyright</span>
             <span className="aria-hidden">{String.fromCharCode(169)}{' '}</span>
              2021 Scott Stebleton
           </p>

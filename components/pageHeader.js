@@ -15,9 +15,11 @@ const pageHeader = () => {
         <li>
           Software Engineer
         </li>
+        <div className="vr" />
         <li>
           Leader
         </li>
+        <div className="vr" />
         <li>
           Cat Dad
         </li>

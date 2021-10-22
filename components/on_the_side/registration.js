@@ -2,7 +2,6 @@ import React from 'react';
 
 import styles from './side.module.scss';
 import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {Carousel} from "react-bootstrap";
 
@@ -16,7 +15,7 @@ const registration = () => {
           </Card.Title>
         </Card.Header>
         <Card.Body>
-          <Col xs={12} lg={6} className="float-lg-right">
+          <Col xs={12} lg={6} className="float-lg-end">
             <Carousel fade>
               <Carousel.Item key={1}>
                 <img src={'/images/igbo-reg-form.jpeg'}
