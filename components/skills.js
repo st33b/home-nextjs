@@ -64,7 +64,7 @@ const skills = () => {
           <Card.Text>
             {leadership.map((item, i) => {
               return (
-                <Badge pill variant="light" key={i} className={styles.Skill}>
+                <Badge bg="light" text="dark" key={i} className={styles.Skill}>
                   {item}
                 </Badge>
               );
@@ -76,7 +76,7 @@ const skills = () => {
           <Card.Text>
             {recentTech.map((item, i) => {
               return (
-                <Badge pill variant="light" key={i} className={styles.Skill}>
+                <Badge bg="light" text="dark" key={i} className={styles.Skill}>
                   {item}
                 </Badge>
               );
@@ -96,7 +96,7 @@ const skills = () => {
           <Card.Text>
             {oldTech.map((item, i) => {
               return (
-                <Badge pill variant="light" key={i} className={styles.Skill}>
+                <Badge bg="light" text="dark" key={i} className={styles.Skill}>
                   {item}
                 </Badge>
               );

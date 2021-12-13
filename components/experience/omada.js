@@ -36,8 +36,6 @@ const omada = () => {
         </div>
       </div>
 
-      <hr className={styles.RoleSeparator}/>
-
       <div className={styles.Role}>
         <div className={styles.Header + " d-sm-flex justify-content-between"}>
           <h3 className={styles.Title}>
@@ -88,8 +86,6 @@ const omada = () => {
           </Row>
         </div>
       </div>
-
-      <hr className={styles.RoleSeparator}/>
 
       <div className={styles.Role}>
         <div className={styles.Header + " d-sm-flex justify-content-between"}>

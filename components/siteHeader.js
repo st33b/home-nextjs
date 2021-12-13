@@ -10,20 +10,20 @@ const siteHeader = () => {
       {/*<link rel="icon" href="/logo-50x50.jpg" />*/}
       <meta content="text/html"
             charSet="utf-8"
-            httpEquiv="Content-Type" />
+            httpEquiv="Content-Type"/>
       <meta content="title"
-            name="{siteTitle}" />
+            name="{siteTitle}"/>
       <meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
-            name="viewport" />
+            name="viewport"/>
 
       <meta
         name="description"
         content="CV for Scott Stebleton, a human being in Atlanta, Georgia"
       />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary_large_image"/>
       <script async defer src="https://buttons.github.io/buttons.js"></script>
     </Head>
-  );
+);
 };
 
 export default siteHeader;
