@@ -18,17 +18,19 @@ const index = () => {
         <BLM />
         <Contact />
 
-        <Tabs defaultActiveKey="experience" className={styles.Menu + " d-flex justify-content-between justify-content-sm-center"}>
-          <Tab title="Experience" eventKey="experience" tabClassName={styles.MenuItem}>
+        <Tabs defaultActiveKey={"experience"}
+              id={"resume-tabs"}
+              className={styles.Menu + " d-flex justify-content-between justify-content-sm-center"}>
+          <Tab title={"Experience"} eventKey={"experience"} tabClassName={styles.MenuItem}>
             <Experience />
           </Tab>
-          <Tab title="On the Side" eventKey="side_projects" tabClassName={styles.MenuItem}>
+          <Tab title={"On the Side"} eventKey={"side_projects"} tabClassName={styles.MenuItem}>
             <OnTheSide />
           </Tab>
-          <Tab title="Skills" eventKey="skills" tabClassName={styles.MenuItem}>
+          <Tab title={"Skills"} eventKey={"skills"} tabClassName={styles.MenuItem}>
             <Skills />
           </Tab>
-          <Tab title=".edu" eventKey="education" tabClassName={styles.MenuItem}>
+          <Tab title={".edu"} eventKey={"education"} tabClassName={styles.MenuItem}>
             <Education />
           </Tab>
         </Tabs>
