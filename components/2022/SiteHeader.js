@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export const siteTitle = 'Scott Stebleton';
 
-const siteHeader = () => {
+const Component = () => {
   return (
     <Head>
       <title>{siteTitle}</title>
@@ -15,7 +15,7 @@ const siteHeader = () => {
       <meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
             name="viewport"/>
       <meta name="description"
-            content="CV for Scott Stebleton, a human being in Atlanta, Georgia"/>
+            content="Resume for Scott Stebleton, a human being in Atlanta, Georgia"/>
       <meta name="twitter:card"
             content="summary_large_image"/>
       <script async
@@ -23,7 +23,7 @@ const siteHeader = () => {
               src="https://buttons.github.io/buttons.js">
       </script>
     </Head>
-);
+  );
 };
 
-export default siteHeader;
+export default Component;

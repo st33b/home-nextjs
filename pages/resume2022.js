@@ -1,21 +1,15 @@
-import React from 'react';
-import {Tab, Tabs} from "react-bootstrap";
-
-import Layout from '../components/layout';
-import BLM from '../components/blm';
-import Contact from '../components/contact';
-import Experience from '../components/experience/experience';
-import Education from '../components/education';
-import Skills from '../components/skills';
-import OnTheSide from '../components/on_the_side/onTheSide';
+import Layout from "../components/layouts/Layout2022/Layout2022";
 
 import styles from '../styles/index.module.scss'
+import PageHeader from "../components/2022/PageHeader/PageHeader";
 
 const index = () => {
   return (
     <Layout>
-      <div className={styles.Home}>
-        <BLM />
+      <div>
+        <PageHeader/>
+
+
         <Contact />
 
         <Tabs defaultActiveKey={"experience"}
