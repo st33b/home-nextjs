@@ -3,6 +3,7 @@ import Omada from "./Omada";
 import Lumos from "./Lumos";
 import Mfp from "./Mfp";
 import Cloudmark from "./Cloudmark";
+import Beatport from "./Beatport";
 
 const Component = () => {
   return (
@@ -14,6 +15,7 @@ const Component = () => {
       <Omada/>
       <Lumos/>
       <Mfp/>
+      <Beatport/>
       <Cloudmark/>
     </div>
   );
