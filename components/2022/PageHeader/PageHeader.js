@@ -1,16 +1,14 @@
-import Image from "next/image";
+import classes from './PageHeader.module.scss';
 
-import styles from './PageHeader.module.scss';
-
-const pageHeader = () => {
+const PageHeader = () => {
   return (
-    <div className={styles.Header}>
-      <div className={`${styles.Name} d-flex justify-content-center`}>
+    <div className={classes.PageHeader}>
+      <div className={`${classes.Name} d-flex justify-content-center`}>
         <h1 className="display-4">
           Scott Stebleton
         </h1>
       </div>
-      <ul className={`${styles.Roles} d-flex justify-content-center`}>
+      <ul className={`${classes.Roles} d-flex justify-content-center`}>
         <li>
           Software Engineer
         </li>
@@ -25,4 +23,4 @@ const pageHeader = () => {
   );
 };
 
-export default pageHeader;
+export default PageHeader;

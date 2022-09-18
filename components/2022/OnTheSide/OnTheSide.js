@@ -9,12 +9,16 @@ const Component = () => {
       </h3>
       <ul>
         <li>
-          <Placeholder/>
-          {/* Tournio */}
+          <a href={'/tournio'}
+             className={classes.Link}>
+            Tournio
+          </a>
         </li>
         <li>
-          <Placeholder/>
-          {/* Websites */}
+          <a href={"/websites"}
+             className={classes.Link}>
+            Websites
+          </a>
         </li>
       </ul>
     </div>

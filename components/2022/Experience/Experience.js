@@ -1,5 +1,8 @@
-import classes from './Skills.module.scss';
-import {Placeholder} from "react-bootstrap";
+import classes from './Experience.module.scss';
+import Omada from "./Omada";
+import Lumos from "./Lumos";
+import Mfp from "./Mfp";
+import Cloudmark from "./Cloudmark";
 
 const Component = () => {
   return (
@@ -8,6 +11,10 @@ const Component = () => {
         Experience
       </h3>
 
+      <Omada/>
+      <Lumos/>
+      <Mfp/>
+      <Cloudmark/>
     </div>
   );
 }

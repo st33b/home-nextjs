@@ -1,3 +1,33 @@
 .Education {
-
+  text-align: right;
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    li {
+      margin-bottom: 1rem;
+      .Line {
+        display: block;
+      }
+      .Degree {
+        font-size: 1.1rem;
+      }
+      .School {
+        font-weight: 500;
+        font-size: 1.1rem;
+      }
+      .Dates {
+        font-size: 0.9rem;
+        font-style: italic;
+      }
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 576px) {
+    h3 {
+      font-weight: 600;
+    }
+  }
 }

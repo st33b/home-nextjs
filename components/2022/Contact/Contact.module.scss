@@ -1,3 +1,22 @@
 .Contact {
+  text-align: right;
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    .Link {
+    }
+    .Code {
+      font-family: "Anonymous Pro", monospace;
+    }
+    i {
+      padding-left: 0.5rem;
+    }
+  }
 
+  @media (min-width: 576px) {
+    h3 {
+      font-weight: 600;
+    }
+  }
 }

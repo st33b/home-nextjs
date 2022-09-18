@@ -1,3 +1,15 @@
 .OnTheSide {
-
+  text-align: right;
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    .Link {
+    }
+  }
+  @media (min-width: 576px) {
+    h3 {
+      font-weight: 600;
+    }
+  }
 }
