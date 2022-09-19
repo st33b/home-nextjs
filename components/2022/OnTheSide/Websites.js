@@ -68,10 +68,10 @@ const Websites = () => {
           </a>
         </li>
       </ul>
+
       <p>
-        <a href={'/resume2022'}
-           className={classes.Back}>
-          <i className={'bi-arrow-left'} aria-hidden={true} />
+        <a href={'/'}>
+          <i className={'bi-arrow-left pe-2'} aria-hidden={true} />
           Back
         </a>
       </p>

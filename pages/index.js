@@ -1,40 +1,34 @@
-import React from 'react';
-import {Tab, Tabs} from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-import Layout from '../components/layout';
-import BLM from '../components/blm';
-import Contact from '../components/contact';
-import Experience from '../components/experience/experience';
-import Education from '../components/education';
-import Skills from '../components/skills';
-import OnTheSide from '../components/on_the_side/onTheSide';
-
-import styles from '../styles/index.module.scss'
+import Layout from "../components/layouts/Layout2022/Layout2022";
+import PageHeader from "../components/2022/PageHeader/PageHeader";
+import Education from "../components/2022/Education/Education";
+import OnTheSide from "../components/2022/OnTheSide/OnTheSide";
+import Skills from "../components/2022/Skills/Skills";
+import Experience from "../components/2022/Experience/Experience";
+import Contact from "../components/2022/Contact/Contact";
 
 const index = () => {
   return (
     <Layout>
-      <div className={styles.Home}>
-        <BLM />
-        <Contact />
+      <Row>
+        <Col>
+          <PageHeader/>
+        </Col>
+      </Row>
 
-        <Tabs defaultActiveKey={"experience"}
-              id={"resume-tabs"}
-              className={styles.Menu + " d-flex justify-content-between justify-content-sm-center"}>
-          <Tab title={"Experience"} eventKey={"experience"} tabClassName={styles.MenuItem}>
-            <Experience />
-          </Tab>
-          <Tab title={"On the OnTheSide"} eventKey={"side_projects"} tabClassName={styles.MenuItem}>
-            <OnTheSide />
-          </Tab>
-          <Tab title={"Skills"} eventKey={"skills"} tabClassName={styles.MenuItem}>
-            <Skills />
-          </Tab>
-          <Tab title={".edu"} eventKey={"education"} tabClassName={styles.MenuItem}>
-            <Education />
-          </Tab>
-        </Tabs>
-      </div>
+      <Row>
+        <Col md={4}>
+          <Contact/>
+          <Education/>
+          <OnTheSide/>
+          <Skills/>
+        </Col>
+        <Col>
+          <Experience/>
+        </Col>
+      </Row>
     </Layout>
   );
 };
