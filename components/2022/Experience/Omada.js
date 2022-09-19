@@ -19,13 +19,13 @@ const Omada = () => {
         </p>
         <div className={classes.Details}>
           <div className={classes.Responsibilities}>
-            <p>
-              Serving as the connective tissue between Omada's business and technical teams, with a focus on patient
-              identity at Omada: ensuring a coherent and complete view of the patient as a whole person, the better to
-              support Omada&apos;s multi-product platform offering. This includes interoperability within Omada's ecosystem
-              as well as externally, such as EHR data sharing.
-            </p>
-            <p>
+            {/*<p>*/}
+            {/*  Serving as the connective tissue between Omada's business and technical teams, with a focus on patient*/}
+            {/*  identity at Omada: ensuring a coherent and complete view of the patient as a whole person, the better to*/}
+            {/*  support Omada&apos;s multi-product platform offering. This includes interoperability within Omada's ecosystem*/}
+            {/*  as well as externally, such as EHR data sharing.*/}
+            {/*</p>*/}
+            <p className={classes.Footnote}>
               <sup>*</sup>
               I went on medical leave shortly after moving into this role.
             </p>

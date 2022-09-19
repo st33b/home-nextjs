@@ -15,7 +15,7 @@ const registration = () => {
           </Card.Title>
         </Card.Header>
         <Card.Body>
-          <Col xs={12} lg={6} className="float-lg-end">
+          <Col xs={12} sm={8} md={6} className="float-sm-end">
             <Carousel fade>
               <Carousel.Item key={1}>
                 <img src={'/images/igbo-reg-form.jpeg'}

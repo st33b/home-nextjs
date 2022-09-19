@@ -5,8 +5,6 @@ import Layout from "../components/layouts/Layout2022/Layout2022";
 import PageHeader from "../components/2022/PageHeader/PageHeader";
 import Tournio from "../components/2022/OnTheSide/Tournio";
 
-import styles from '../styles/index.module.scss'
-
 const tournio = () => {
   return (
     <Layout>

@@ -13,10 +13,10 @@ const PageHeader = () => {
           Software Engineer
         </li>
         <li>
-          Leader
+          Bicyclist
         </li>
         <li>
-          Cat Dad
+          Bowler
         </li>
       </ul>
     </div>

@@ -1,3 +1,48 @@
 .Websites {
+  max-width: 800px;
+  margin: 0 auto;
 
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .ExampleList {
+
+  }
+
+  .Carousel {
+    width: 100%;
+    margin: 0.5rem 0 1rem;
+
+    .Screenshot {
+      margin: 0 auto;
+    }
+  }
+
+  .Back {
+    i {
+      padding-right: 0.25rem;
+    }
+  }
+
+  @media (min-width: 576px) {
+    h2 {
+      font-size: 1.55rem;
+    }
+
+    .Carousel {
+      width: 60%;
+      margin: 0 0 1rem 1rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+    .Carousel {
+      width: 50%;
+    }
+  }
 }
