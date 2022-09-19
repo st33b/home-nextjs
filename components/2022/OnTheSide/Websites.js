@@ -36,6 +36,7 @@ const Websites = () => {
                  target={"_new"}>
                 <Image src={img.src}
                        title={img.title}
+                       alt={img.title}
                        blur={true}
                        className={classes.Screenshot}
                 />
@@ -46,8 +47,8 @@ const Websites = () => {
       </div>
 
       <p>
-        I maintain the informational websites for several IGBO-affiliated bowling tournaments. You'll see some
-        common design elements, since&mdash;in all honesty&mdash;I'm not much of a visual designer.
+        I maintain the informational websites for several IGBO-affiliated bowling tournaments. You&apos;ll see some
+        common design elements, since&mdash;in all honesty&mdash;I&apos;m not much of a visual designer.
       </p>
 
       <ul className={classes.ExampleList}>

@@ -44,7 +44,7 @@ const Tournio = () => {
         }
       );
     }
-  });
+  }, []);
 
   const screenshots = [
     {
@@ -110,6 +110,7 @@ const Tournio = () => {
                    target={"_new"}>
                   <Image src={img.light}
                          title={img.title}
+                         alt={img.title}
                          blur={true}
                          className={classes.Screenshot}
                   />
@@ -120,6 +121,7 @@ const Tournio = () => {
                    target={"_new"}>
                   <Image src={img.dark}
                          title={img.title}
+                         alt={img.title}
                          blur={true}
                          className={classes.Screenshot}
                   />

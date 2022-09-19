@@ -20,7 +20,7 @@ const Beatport = () => {
           <div className={classes.Responsibilities}>
             <p>
               Full-stack developer on several customer-facing projects and RESTful APIs, with a focus on database
-              integration: schema design, data modeling, and optimizing our applications' and APIs' integration with the
+              integration: schema design, data modeling, and optimizing our applications&apos; and APIs&apos; integration with the
               data layer.
             </p>
           </div>
