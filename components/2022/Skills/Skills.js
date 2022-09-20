@@ -49,13 +49,39 @@ const Skills = () => {
     'Maven',
   ].sort();
 
+  const salient = [
+    'Ruby on Rails',
+    'React',
+    'JavaScript',
+    'APIs',
+    'TDD',
+    'Data Modeling',
+    'Mentorship',
+    'Growth',
+  ];
+
   return (
     <div className={classes.Skills}>
       <h3>
+        <span className={'d-sm-none'}>
+          Primary{' '}
+        </span>
         Skills
       </h3>
 
-      <div className={classes.Category}>
+      <div className={`d-sm-none ${classes.Category}`}>
+        <div className={`${classes.Items} ${classes.Salient}`}>
+          {salient.map((item, i) => {
+            return (
+              <span key={i} className={`badge ${classes.Skill}`}>
+                {item}
+              </span>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className={`d-none d-sm-block ${classes.Category}`}>
         <h6>
           Technology
         </h6>
@@ -70,7 +96,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className={classes.Category}>
+      <div className={`d-none d-sm-block ${classes.Category}`}>
         <h6>
           Leadership
         </h6>
@@ -85,7 +111,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className={classes.Category}>
+      <div className={`d-none d-sm-block ${classes.Category}`}>
         <h6>
           Previous but not recent
         </h6>

@@ -24,10 +24,6 @@ const Websites = () => {
 
   return (
     <div className={classes.Websites}>
-      <h2>
-        Bowling Tournament Websites
-      </h2>
-
       <div className={`${classes.Carousel} float-sm-end`}>
         <Carousel fade indicators={false} controls={false} className={'shadow'}>
           {websites.map((img, i) => (

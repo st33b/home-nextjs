@@ -7,27 +7,44 @@ const Contact = () => {
         Contact
       </h3>
       <ul className={'d-flex justify-content-between d-sm-block'}>
-        <li>
+        <li className={'me-auto'}>
           <i className={"bi-geo-alt-fill d-sm-none"} aria-hidden={true}/>
           Atlanta, GA
-          <i className={"bi-geo-alt-fill d-none"} aria-hidden={true}/>
+          <i className={"bi-geo-alt-fill d-none d-sm-inline"} aria-hidden={true}/>
         </li>
-        <li>
-          <i className="bi-envelope-fill d-sm-none" aria-hidden={true} />
+        <li className={'d-sm-none me-2'}>
+          <a href="mailto:scott@stebleton.net"
+             aria-label="Send me an email"
+             title={"Send me an email"}
+             className={`btn ${classes.Link} ${classes.Code}`}>
+            <span className={'visually-hidden'}>
+              Email me
+            </span>
+            <i className="bi-envelope-fill" aria-hidden={true} />
+          </a>
+        </li>
+        <li className={'d-none d-sm-block'}>
           <a href="mailto:scott@stebleton.net"
              aria-label="Send me an email"
              className={`${classes.Link} ${classes.Code}`}>
             <span className={'d-none d-sm-inline'}>
               scott@stebleton.net
             </span>
-            <span className={'d-sm-none'}>
-              email
-            </span>
           </a>
-          <i className="bi-envelope-fill d-none" aria-hidden={true} />
+          <i className="bi-envelope-fill" aria-hidden={true} />
         </li>
-        <li>
-          <i className={"bi-telephone-fill d-sm-none"} aria-hidden={true}/>
+        <li className={'d-sm-none'}>
+          <a tel={"4153088651"}
+             aria-label={"Call me"}
+             title={"Call me"}
+             className={`btn ${classes.Link}`}>
+            <span className={'visually-hidden'}>
+              Call me
+            </span>
+            <i className={"bi-telephone-fill"} aria-hidden={true}/>
+          </a>
+        </li>
+        <li className={'d-none d-sm-block'}>
           <a tel={"4153088651"}
              aria-label={"Call me"}
              className={classes.Link}>
@@ -38,7 +55,7 @@ const Contact = () => {
               call
             </span>
           </a>
-          <i className={"bi-telephone-fill d-none"} aria-hidden={true}/>
+          <i className={"bi-telephone-fill"} aria-hidden={true}/>
         </li>
         <li className={'d-none d-sm-block'}>
           <a href="https://www.linkedin.com/in/scottstebleton/"

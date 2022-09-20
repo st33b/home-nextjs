@@ -19,11 +19,16 @@ const index = () => {
         <div className={'col-12 col-md-4'}>
           <Contact/>
           <Education/>
-          <OnTheSide/>
+          <div className={'d-none d-sm-block'}>
+            <OnTheSide/>
+          </div>
           <Skills/>
         </div>
         <div className={'col'}>
           <Experience/>
+          <div className={'d-sm-none'}>
+            <OnTheSide/>
+          </div>
         </div>
       </div>
     </Layout>

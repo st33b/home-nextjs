@@ -5,7 +5,7 @@ const Component = () => {
   return (
     <div className={classes.OnTheSide}>
       <h3>
-        On the Side
+        Hobby Projects
       </h3>
       <ul>
         <li>
@@ -17,7 +17,7 @@ const Component = () => {
         <li>
           <a href={"/websites"}
              className={classes.Link}>
-            Websites
+            Bowling Tournament Websites
           </a>
         </li>
       </ul>

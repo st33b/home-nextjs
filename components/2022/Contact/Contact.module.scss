@@ -2,15 +2,24 @@
   ul {
     list-style: none;
     padding: 0;
-    font-size: 1rem;
-    .Link {
-    }
+    font-size: 0.9rem;
     .Code {
       font-family: "Anonymous Pro", monospace;
     }
     i {
       padding-right: 0.5rem;
       padding-left: 0;
+    }
+    .Link {
+      color: #1d3557;
+      border: 1px solid #1d3557;
+      @media (prefers-color-scheme: dark) {
+        border-color: #f1faeedd;
+        color: #f1faeedd;
+      }
+      i {
+        padding: 0;
+      }
     }
   }
 }
@@ -23,9 +32,15 @@
       font-weight: 600;
     }
 
-    i {
-      padding-right: 0;
-      padding-left: 0.5rem;
+    ul {
+      font-size: 1rem;
+      .Link {
+        border: none;
+      }
+      i {
+        padding-right: 0;
+        padding-left: 0.5rem;
+      }
     }
   }
 }
