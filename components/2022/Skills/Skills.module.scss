@@ -1,0 +1,44 @@
+.Skills {
+  .Category {
+    margin-bottom: 0.75rem;
+    text-align: center;
+
+    h6 {
+      display: none;
+    }
+    .Items {
+      .Skill {
+        margin: 0.1rem;
+        line-height: 1rem;
+        background-color: #457b9d05;
+        color: #1d3557cc;
+        border: 1px solid #1d355766;
+        @media (prefers-color-scheme: dark) {
+          color: #f1faeedd;
+          background-color: #457b9d33;
+          border: 1px solid #f1faee33;
+        }
+      }
+    }
+    .Salient {
+      .Skill {
+        line-height: 1.5rem;
+        margin: 0.5rem 0.25rem;
+      }
+    }
+  }
+  @media (min-width: 576px) {
+    text-align: right;
+    h3 {
+      font-weight: 600;
+    }
+    .Category {
+      text-align: right;
+      h6 {
+        display: block;
+        font-weight: normal;
+        font-style: oblique;
+      }
+    }
+  }
+}
