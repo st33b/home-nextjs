@@ -34,7 +34,7 @@ const Contact = () => {
           <i className="bi-envelope-fill" aria-hidden={true} />
         </li>
         <li className={'d-sm-none'}>
-          <a tel={"4153088651"}
+          <a href={"tel:415-308-8651"}
              aria-label={"Call me"}
              title={"Call me"}
              className={`btn ${classes.Link}`}>
@@ -45,7 +45,7 @@ const Contact = () => {
           </a>
         </li>
         <li className={'d-none d-sm-block'}>
-          <a tel={"4153088651"}
+          <a href={"tel:415-308-8651"}
              aria-label={"Call me"}
              className={classes.Link}>
             <span className={'d-none d-sm-inline'}>
