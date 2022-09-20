@@ -1,34 +1,46 @@
-import {Placeholder} from "react-bootstrap";
 import classes from './Contact.module.scss';
 
-const Component = () => {
+const Contact = () => {
   return (
     <div className={classes.Contact}>
-      <h3>
+      <h3 className={'d-none d-sm-block'}>
         Contact
       </h3>
-      <ul>
+      <ul className={'d-flex justify-content-between d-sm-block'}>
         <li>
-          Atlanta, GA (for now)
-          <i className={"bi-geo-alt-fill"} aria-hidden={true}/>
+          <i className={"bi-geo-alt-fill d-sm-none"} aria-hidden={true}/>
+          Atlanta, GA
+          <i className={"bi-geo-alt-fill d-none"} aria-hidden={true}/>
         </li>
         <li>
+          <i className="bi-envelope-fill d-sm-none" aria-hidden={true} />
           <a href="mailto:scott@stebleton.net"
              aria-label="Send me an email"
              className={`${classes.Link} ${classes.Code}`}>
-            scott@stebleton.net
+            <span className={'d-none d-sm-inline'}>
+              scott@stebleton.net
+            </span>
+            <span className={'d-sm-none'}>
+              email
+            </span>
           </a>
-          <i className="bi-envelope-fill" aria-hidden={true} />
+          <i className="bi-envelope-fill d-none" aria-hidden={true} />
         </li>
         <li>
+          <i className={"bi-telephone-fill d-sm-none"} aria-hidden={true}/>
           <a tel={"4153088651"}
              aria-label={"Call me"}
              className={classes.Link}>
-            415-308-8651
+            <span className={'d-none d-sm-inline'}>
+              415-308-8651
+            </span>
+            <span className={'d-sm-none'}>
+              call
+            </span>
           </a>
-          <i className={"bi-telephone-fill"} aria-hidden={true}/>
+          <i className={"bi-telephone-fill d-none"} aria-hidden={true}/>
         </li>
-        <li>
+        <li className={'d-none d-sm-block'}>
           <a href="https://www.linkedin.com/in/scottstebleton/"
              aria-label="Visit my profile on LinkedIn"
              className={classes.Link}>
@@ -36,8 +48,8 @@ const Component = () => {
           </a>
           <i className={"bi-linkedin"} aria-hidden={true}/>
         </li>
-        <li>
-          <a href="https://github.com/st33b"
+        <li className={'d-none d-sm-block'}>
+           <a href="https://github.com/st33b"
              aria-label="Visit my profile on GitHub"
              className={classes.Link}>
             Github
@@ -49,4 +61,4 @@ const Component = () => {
   );
 }
 
-export default Component;
+export default Contact;

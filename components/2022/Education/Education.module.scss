@@ -1,4 +1,6 @@
 .Education {
+  display: none;
+
   text-align: right;
   ul {
     list-style: none;
@@ -25,7 +27,12 @@
       margin-bottom: 0;
     }
   }
-  @media (min-width: 576px) {
+}
+
+@media (min-width: 576px) {
+  .Education {
+    display: block;
+
     h3 {
       font-weight: 600;
     }

@@ -1,5 +1,4 @@
 .Contact {
-  text-align: right;
   ul {
     list-style: none;
     padding: 0;
@@ -10,13 +9,23 @@
       font-family: "Anonymous Pro", monospace;
     }
     i {
-      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-left: 0;
     }
   }
+}
 
-  @media (min-width: 576px) {
+@media (min-width: 576px) {
+  .Contact {
+    text-align: right;
+
     h3 {
       font-weight: 600;
+    }
+
+    i {
+      padding-right: 0;
+      padding-left: 0.5rem;
     }
   }
 }

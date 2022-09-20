@@ -1,7 +1,6 @@
 import classes from './Education.module.scss';
-import {Placeholder} from "react-bootstrap";
 
-const Component = () => {
+const Education = () => {
   return (
     <div className={classes.Education}>
       <h3>
@@ -26,4 +25,4 @@ const Component = () => {
   );
 }
 
-export default Component;
+export default Education;

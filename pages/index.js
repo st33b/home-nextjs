@@ -1,6 +1,3 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
 import Layout from "../components/layouts/Layout2022/Layout2022";
 import PageHeader from "../components/2022/PageHeader/PageHeader";
 import Education from "../components/2022/Education/Education";
@@ -12,23 +9,23 @@ import Contact from "../components/2022/Contact/Contact";
 const index = () => {
   return (
     <Layout>
-      <Row>
-        <Col>
+      <div className={'row'}>
+        <div className={'col'}>
           <PageHeader/>
-        </Col>
-      </Row>
+        </div>
+      </div>
 
-      <Row>
-        <Col md={4}>
+      <div className={'row'}>
+        <div className={'col-12 col-md-4'}>
           <Contact/>
           <Education/>
           <OnTheSide/>
           <Skills/>
-        </Col>
-        <Col>
+        </div>
+        <div className={'col'}>
           <Experience/>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </Layout>
   );
 };
