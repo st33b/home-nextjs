@@ -73,6 +73,14 @@ const Contact = () => {
           </a>
           <i className={"bi-github"} aria-hidden={true}/>
         </li>
+        <li className={'d-none d-sm-block'}>
+          <a href={'/scott_stebleton.pdf'}
+             aria-label={"Download this resume in PDF format"}
+             title={"Download this resume in PDF format"}>
+            PDF Download
+          </a>
+          <i className={'bi-filetype-pdf'} aria-hidden={true} />
+        </li>
       </ul>
     </div>
   );
