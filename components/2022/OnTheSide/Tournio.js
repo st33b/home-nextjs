@@ -146,6 +146,20 @@ const Tournio = () => {
         2022, some for several years. As the system matures and word of mouth spreads, I anticipate adding more
         to the list.
       </p>
+      <ul className={classes.Github}>
+        <li>
+          <i className={'bi-github pe-2'} aria-hidden={true}/>
+          <a href={"https://github.com/st33b/tournio-api"}>
+            API Backend
+          </a>
+        </li>
+        <li>
+          <i className={'bi-github pe-2'} aria-hidden={true}/>
+          <a href={"https://github.com/st33b/tournio-web-client"}>
+            Web Frontend
+          </a>
+        </li>
+      </ul>
 
       <p>
         <a href={'/'}>
