@@ -10,15 +10,18 @@ const PageHeader = () => {
       </div>
       <ul className={`${classes.Roles} d-flex justify-content-start justify-content-sm-center`}>
         <li>
-          Software Engineer
+          Software Professional
         </li>
         <li>
-          Bicyclist
+          Mentor
         </li>
         <li>
           Bowler
         </li>
       </ul>
+      <div className={`${classes.Seeking}`}>
+        Seeking an individual contributor role with a mission-driven organization, where I will have the opportunity to grow and stretch my skills as an architect, developer, mentor, and human being.
+      </div>
     </div>
   );
 };

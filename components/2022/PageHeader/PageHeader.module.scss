@@ -19,6 +19,9 @@
       color: transparent;
     }
   }
+  .Seeking {
+    display: none;
+  }
 
   @media (min-width: 576px) {
     .Name {
@@ -52,6 +55,17 @@
       li:last-child {
         border-right: none;
       }
+    }
+
+    .Seeking {
+      display: block;
+      width: 80%;
+      text-align: center;
+      padding: 0.5rem;
+      margin: 1rem auto;
+      border: 1px solid;
+      border-radius: 5px;
+
     }
   }
 }

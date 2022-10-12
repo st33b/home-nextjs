@@ -74,9 +74,9 @@ const Contact = () => {
           <i className={"bi-github"} aria-hidden={true}/>
         </li>
         <li className={'d-none d-sm-block'}>
-          <a href={'/scott_stebleton.pdf'}
-             aria-label={"Download this resume in PDF format"}
-             title={"Download this resume in PDF format"}>
+          <a href={'/scott_stebleton_detailed.pdf'}
+             aria-label={"Download this resume as a PDF"}
+             title={"Download this resume as a PDF"}>
             PDF Download
           </a>
           <i className={'bi-filetype-pdf'} aria-hidden={true} />
