@@ -20,7 +20,8 @@ const PageHeader = () => {
         </li>
       </ul>
       <div className={`${classes.Seeking}`}>
-        Seeking an individual contributor role with a mission-driven organization, where I will have the opportunity to grow and stretch my skills as an architect, developer, mentor, and human being.
+        {/*Seeking an individual contributor role with a mission-driven organization, where I will have the opportunity to grow and stretch my skills as an architect, developer, mentor, and human being.*/}
+        Currently on medical leave, and not open to new opportunities.
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ const Contact = () => {
           <i className="bi-envelope-fill" aria-hidden={true} />
         </li>
         <li className={'d-sm-none'}>
-          <a href={"tel:415-308-8651"}
+          <a href={"tel:972-835-0117"}
              aria-label={"Call me"}
              title={"Call me"}
              className={`btn ${classes.Link}`}>
@@ -45,11 +45,12 @@ const Contact = () => {
           </a>
         </li>
         <li className={'d-none d-sm-block'}>
-          <a href={"tel:415-308-8651"}
+          <a href={"tel:972-835-0117"}
              aria-label={"Call me"}
              className={classes.Link}>
             <span className={'d-none d-sm-inline'}>
-              415-308-8651
+              {/*415-308-8651*/}
+              972-835-0117
             </span>
             <span className={'d-sm-none'}>
               call
@@ -73,14 +74,14 @@ const Contact = () => {
           </a>
           <i className={"bi-github"} aria-hidden={true}/>
         </li>
-        <li className={'d-none d-sm-block'}>
-          <a href={'/scott_stebleton_detailed.pdf'}
-             aria-label={"Download this resume as a PDF"}
-             title={"Download this resume as a PDF"}>
-            PDF Download
-          </a>
-          <i className={'bi-filetype-pdf'} aria-hidden={true} />
-        </li>
+        {/*<li className={'d-none d-sm-block'}>*/}
+        {/*  <a href={'/scott_stebleton_detailed.pdf'}*/}
+        {/*     aria-label={"Download this resume as a PDF"}*/}
+        {/*     title={"Download this resume as a PDF"}>*/}
+        {/*    PDF Download*/}
+        {/*  </a>*/}
+        {/*  <i className={'bi-filetype-pdf'} aria-hidden={true} />*/}
+        {/*</li>*/}
       </ul>
     </div>
   );
