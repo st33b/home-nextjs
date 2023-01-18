@@ -21,6 +21,7 @@
     "remark-parse": "^10.0.1",
     "remark-react": "^9.0.1",
     "sass": "^1.54.9",
+    "sharp": "^0.31.3",
     "unified": "^10.1.2"
   },
   "devDependencies": {
