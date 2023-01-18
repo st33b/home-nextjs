@@ -1,14 +1,13 @@
 {
   "name": "nextjs-based_homepage",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Scott Stebleton",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "now-build": "next build"
+    "lint": "next lint"
   },
   "dependencies": {
     "bootstrap": "^5.2.1",
