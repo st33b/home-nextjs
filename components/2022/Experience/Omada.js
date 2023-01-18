@@ -22,7 +22,7 @@ const Omada = () => {
             <p>
               Serving as the connective tissue between Omada&apos;s business and technical teams, with a focus on patient
               identity at Omada: ensuring a coherent and complete view of the patient as a whole person, the better to
-              support Omada&apos;s multi-product platform offering. This includes interoperability within Omada's ecosystem
+              support Omada&apos;s multi-product platform offering. This includes interoperability within Omada&apos;s ecosystem
               as well as externally, such as EHR data sharing.
             </p>
           </div>
