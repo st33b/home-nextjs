@@ -33,31 +33,31 @@ const Contact = () => {
           </a>
           <i className="bi-envelope-fill" aria-hidden={true} />
         </li>
-        <li className={'d-sm-none'}>
-          <a href={"tel:972-835-0117"}
-             aria-label={"Call me"}
-             title={"Call me"}
-             className={`btn ${classes.Link}`}>
-            <span className={'visually-hidden'}>
-              Call me
-            </span>
-            <i className={"bi-telephone-fill"} aria-hidden={true}/>
-          </a>
-        </li>
-        <li className={'d-none d-sm-block'}>
-          <a href={"tel:972-835-0117"}
-             aria-label={"Call me"}
-             className={classes.Link}>
-            <span className={'d-none d-sm-inline'}>
-              {/*415-308-8651*/}
-              972-835-0117
-            </span>
-            <span className={'d-sm-none'}>
-              call
-            </span>
-          </a>
-          <i className={"bi-telephone-fill"} aria-hidden={true}/>
-        </li>
+        {/*<li className={'d-sm-none'}>*/}
+        {/*  <a href={"tel:972-835-0117"}*/}
+        {/*     aria-label={"Call me"}*/}
+        {/*     title={"Call me"}*/}
+        {/*     className={`btn ${classes.Link}`}>*/}
+        {/*    <span className={'visually-hidden'}>*/}
+        {/*      Call me*/}
+        {/*    </span>*/}
+        {/*    <i className={"bi-telephone-fill"} aria-hidden={true}/>*/}
+        {/*  </a>*/}
+        {/*</li>*/}
+        {/*<li className={'d-none d-sm-block'}>*/}
+        {/*  <a href={"tel:972-835-0117"}*/}
+        {/*     aria-label={"Call me"}*/}
+        {/*     className={classes.Link}>*/}
+        {/*    <span className={'d-none d-sm-inline'}>*/}
+        {/*      /!*415-308-8651*!/*/}
+        {/*      972-835-0117*/}
+        {/*    </span>*/}
+        {/*    <span className={'d-sm-none'}>*/}
+        {/*      call*/}
+        {/*    </span>*/}
+        {/*  </a>*/}
+        {/*  <i className={"bi-telephone-fill"} aria-hidden={true}/>*/}
+        {/*</li>*/}
         <li className={'d-none d-sm-block'}>
           <a href="https://www.linkedin.com/in/scottstebleton/"
              aria-label="Visit my profile on LinkedIn"
