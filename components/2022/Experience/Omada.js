@@ -14,7 +14,7 @@ const Omada = () => {
           Software Architect
         </h5>
         <p className={classes.Dates}>
-          2021-2022
+          2021-2023
           <sup>*</sup>
         </p>
         <div className={classes.Details}>
