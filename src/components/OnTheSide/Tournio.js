@@ -2,19 +2,19 @@ import {useEffect, useState} from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 
-import LogoImage from "../../../images/tournio-logo.png";
-import LogoImageDark from "../../../images/tournio-logo-inverted-gray.png";
+import LogoImage from "../../images/tournio-logo.png";
+import LogoImageDark from "../../images/tournio-logo-inverted-gray.png";
 
-import dirDesktopDark from "../../../public/images/tournio_screenshots/director-desktop-dark.png";
-import dirDesktopLight from "../../../public/images/tournio_screenshots/director-desktop-light.png";
-import dirMobileDark from "../../../public/images/tournio_screenshots/director-mobile-dark.png";
-import dirMobileLight from "../../../public/images/tournio_screenshots/director-mobile-light.png";
-import regCartDark from "../../../public/images/tournio_screenshots/registration-cart-dark.png";
-import regCartLight from "../../../public/images/tournio_screenshots/registration-cart-light.png";
-import regFormDark from "../../../public/images/tournio_screenshots/registration-form-dark.png";
-import regFormLight from "../../../public/images/tournio_screenshots/registration-form-light.png";
-import regFrontDark from "../../../public/images/tournio_screenshots/registration-front-dark.png";
-import regFrontLight from "../../../public/images/tournio_screenshots/registration-front-light.png";
+import dirDesktopDark from "../../images/tournio_screenshots/director-desktop-dark.png";
+import dirDesktopLight from "../../images/tournio_screenshots/director-desktop-light.png";
+import dirMobileDark from "../../images/tournio_screenshots/director-mobile-dark.png";
+import dirMobileLight from "../../images/tournio_screenshots/director-mobile-light.png";
+import regCartDark from "../../images/tournio_screenshots/registration-cart-dark.png";
+import regCartLight from "../../images/tournio_screenshots/registration-cart-light.png";
+import regFormDark from "../../images/tournio_screenshots/registration-form-dark.png";
+import regFormLight from "../../images/tournio_screenshots/registration-form-light.png";
+import regFrontDark from "../../images/tournio_screenshots/registration-front-dark.png";
+import regFrontLight from "../../images/tournio_screenshots/registration-front-light.png";
 
 import classes from './Tournio.module.scss';
 
@@ -80,8 +80,14 @@ const Tournio = () => {
         <h2 className={'visually-hidden'}>
           Tournio
         </h2>
-        {scheme === 'light' && <Image src={LogoImage} alt={'Tournio logo image'}/>}
-        {scheme === 'dark' && <Image src={LogoImageDark} alt={'Tournio logo image'}/>}
+        {scheme === 'light' && <Image src={LogoImage}
+                                      alt={'Tournio logo image'}
+                                      className={'img-fluid'}
+        />}
+        {scheme === 'dark' && <Image src={LogoImageDark}
+                                     className={'img-fluid'}
+                                     alt={'Tournio logo image'}
+        />}
       </div>
 
       {/* Carousel of images here */}
@@ -96,9 +102,7 @@ const Tournio = () => {
         <a href="http://www.igbo.org/">
           International Gay Bowling Organization
         </a>
-        {' '}(IGBO). I&apos;ve been working on it since 2015, partly as a passion project, and partly as a way to
-        exercise my development skills. It is built using Ruby on Rails, with an API-driven front end written in
-        React, and a custom administrative interface for tournament directors.
+        {' '}(IGBO). I&apos;ve been working on it since 2015, partly as a passion project, and partly as a way to exercise my development skills. It is built using Ruby on Rails, with an API-driven React front end using NextJS, and a custom administrative interface for tournament directors.
       </p>
 
       <div className={`${classes.Carousel} float-sm-end`}>
@@ -111,8 +115,7 @@ const Tournio = () => {
                   <Image src={img.light}
                          title={img.title}
                          alt={img.title}
-                         blur={true}
-                         className={classes.Screenshot}
+                         className={`${classes.Screenshot} img-fluid w-100`}
                   />
                 </a>
               )}
@@ -122,8 +125,7 @@ const Tournio = () => {
                   <Image src={img.dark}
                          title={img.title}
                          alt={img.title}
-                         blur={true}
-                         className={classes.Screenshot}
+                         className={`${classes.Screenshot} img-fluid w-100`}
                   />
                 </a>
               )}
@@ -133,18 +135,13 @@ const Tournio = () => {
       </div>
 
       <p>
-        Bowlers can use Tournio to register for tournaments, sign up for optional events, join existing teams
-        (for solo bowlers), and pay their registration fees via Stripe.
+        Bowlers can use Tournio to register for tournaments, sign up for optional events, join existing teams (for solo bowlers), and pay their registration fees via Stripe.
       </p>
       <p>
-        Tournament directors can see all registered teams and bowlers, make changes, move bowlers from one team to
-        another, create and confirm free entries, and export bowler data in both CSV and XML formats, the latter of
-        which is designed for import into IGBO-TS, a commonly-used tournament software.
+        Tournament directors can see all registered teams and bowlers, make changes, move bowlers from one team to another, create and confirm free entries, and export bowler data in both CSV and XML formats, the latter of which is designed for import into tournament software used by many IGBO tournaments.
       </p>
       <p>
-        To date, ten different tournaments across the country have used Tournio, five of them for the first time in
-        2022, some for several years. As the system matures and word of mouth spreads, I anticipate adding more
-        to the list.
+        To date, fourteen different tournaments across the country have used Tournio, including IGBO Annual 2024, which registered nearly 350 bowlers. As the system has matured and word of mouth has spread, it has become a viable alternative to the registration solution provided by IGBO&apos;s technology partner at no cost to the tournaments themselves.
       </p>
       <ul className={classes.Github}>
         <li>

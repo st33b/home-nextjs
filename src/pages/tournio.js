@@ -1,10 +1,9 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import Layout from "../components/layouts/Layout2022/Layout2022";
-import PageHeader from "../components/2022/PageHeader/PageHeader";
-import Websites from "../components/2022/OnTheSide/Websites";
-import classes from "../components/2022/OnTheSide/Websites.module.scss";
+import Layout from "../components/Layout2022/Layout2022";
+import PageHeader from "../components/PageHeader/PageHeader";
+import Tournio from "../components/OnTheSide/Tournio";
 
 const tournio = () => {
   return (
@@ -17,7 +16,7 @@ const tournio = () => {
 
       <Row>
         <Col>
-          <Websites/>
+          <Tournio/>
         </Col>
       </Row>
 

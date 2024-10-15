@@ -1,8 +1,8 @@
 import classes from './Websites.module.scss';
 
-import BigD from "../../../public/images/website_screenshots/bigdclassic.jpeg";
-import SF from "../../../public/images/website_screenshots/sfggc.jpeg";
-import OKC from "../../../public/images/website_screenshots/okclassic.jpeg";
+import BigD from "../../images/website_screenshots/bigdclassic.jpeg";
+import SF from "../../images/website_screenshots/sfggc.jpeg";
+import OKC from "../../images/website_screenshots/okclassic.jpeg";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 

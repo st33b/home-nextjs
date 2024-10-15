@@ -1,10 +1,10 @@
-import Layout from "../components/layouts/Layout2022/Layout2022";
-import PageHeader from "../components/2022/PageHeader/PageHeader";
-import Education from "../components/2022/Education/Education";
-import OnTheSide from "../components/2022/OnTheSide/OnTheSide";
-import Skills from "../components/2022/Skills/Skills";
-import Experience from "../components/2022/Experience/Experience";
-import Contact from "../components/2022/Contact/Contact";
+import Layout from "../components/Layout2022/Layout2022";
+import PageHeader from "../components/PageHeader/PageHeader";
+import Education from "../components/Education/Education";
+import OnTheSide from "../components/OnTheSide/OnTheSide";
+import Skills from "../components/Skills/Skills";
+import Experience from "../components/Experience/Experience";
+import Contact from "../components/Contact/Contact";
 
 const index = () => {
   return (

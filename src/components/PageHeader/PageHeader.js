@@ -20,8 +20,12 @@ const PageHeader = () => {
         </li>
       </ul>
       <div className={`${classes.Seeking}`}>
-        {/*Seeking an individual contributor role with a mission-driven organization, where I will have the opportunity to grow and stretch my skills as an architect, developer, mentor, and human being.*/}
-        Currently working to recover from illness, and not open to new opportunities.
+        {/*
+        Seeking an individual contributor role with a mission-driven organization, where I will have the opportunity
+        to grow and stretch my skills as an architect, developer, mentor, and human being.
+        */}
+        I am on long-term disability. While I hope to eventually return to work, for the time being, I am focused on my
+        health and am not open to new opportunities.
       </div>
     </div>
   );
