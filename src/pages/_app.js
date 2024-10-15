@@ -1,17 +1,17 @@
-import {SSRProvider} from "react-bootstrap";
 import {useEffect} from "react";
-import '../styles/base_styles.scss';
 
-function MyApp({ Component, pageProps }) {
+import '@/styles/base_styles.scss';
+
+export default function App({ Component, pageProps }) {
   useEffect(() => {
     import('bootstrap');
   }, []);
 
-  return (
-    <SSRProvider>
-      <Component {...pageProps} />
-    </SSRProvider>
-  )
-}
+  const getLayout = Component.getLayout || ((page) => page);
 
-export default MyApp
+  return (
+    <>
+      {getLayout(<Component {...pageProps} />)}
+    </>
+  );
+}

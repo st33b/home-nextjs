@@ -18,10 +18,6 @@ const Component = () => {
             content="Resume for Scott Stebleton, a human being in Atlanta, Georgia"/>
       <meta name="twitter:card"
             content="summary_large_image"/>
-      <script async
-              defer
-              src="https://buttons.github.io/buttons.js">
-      </script>
     </Head>
   );
 };

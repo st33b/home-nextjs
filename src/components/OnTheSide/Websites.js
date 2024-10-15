@@ -33,8 +33,7 @@ const Websites = () => {
                 <Image src={img.src}
                        title={img.title}
                        alt={img.title}
-                       blur={true}
-                       className={classes.Screenshot}
+                       className={`${classes.Screenshot} img-fluid w-100`}
                 />
               </a>
             </Carousel.Item>

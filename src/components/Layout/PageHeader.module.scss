@@ -19,9 +19,6 @@
       color: transparent;
     }
   }
-  .Seeking {
-    display: none;
-  }
 
   @media (min-width: 576px) {
     .Name {
@@ -35,18 +32,17 @@
       padding: 0.75rem 0;
       margin-bottom: 1rem;
 
-      background-color: #a8dadc;
+      background-color: var(--stebleton-role-bg);
       @media (prefers-color-scheme: dark) {
-        background-color: #457b9d;
         font-weight: 300;
       }
 
       li {
         padding-right: 0.7rem;
         padding-left: 0.7rem;
-        border-right: 1px solid #1d3557;
+        //border-right: 1px solid #1d3557;
         @media (prefers-color-scheme: dark) {
-          border-right-color: #f1faeedd;
+          //border-right-color: #f1faeedd;
         }
       }
       li:after {
@@ -55,17 +51,6 @@
       li:last-child {
         border-right: none;
       }
-    }
-
-    .Seeking {
-      display: block;
-      width: 80%;
-      text-align: center;
-      padding: 0.5rem;
-      margin: 1rem auto;
-      border: 1px solid;
-      border-radius: 5px;
-
     }
   }
 }

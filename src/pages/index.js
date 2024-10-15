@@ -1,18 +1,20 @@
-import Layout from "../components/Layout2022/Layout2022";
-import PageHeader from "../components/PageHeader/PageHeader";
-import Education from "../components/Education/Education";
-import OnTheSide from "../components/OnTheSide/OnTheSide";
-import Skills from "../components/Skills/Skills";
-import Experience from "../components/Experience/Experience";
-import Contact from "../components/Contact/Contact";
+import Layout from "@/components/Layout/Layout";
+import Education from "@/components/Education/Education";
+import OnTheSide from "@/components/OnTheSide/OnTheSide";
+import Skills from "@/components/Skills/Skills";
+import Experience from "@/components/Experience/Experience";
+import Contact from "@/components/Contact/Contact";
 
-const index = () => {
+const Page = () => {
   return (
-    <Layout>
-      <div className={'row'}>
-        <div className={'col'}>
-          <PageHeader/>
-        </div>
+    <>
+      <div className={`d-none d-sm-block mx-auto my-3 p-2 w-75 text-center border border-dark-subtle rounded`}>
+        {/*
+        Seeking an individual contributor role with a mission-driven organization, where I will have the opportunity
+        to grow and stretch my skills as an architect, developer, mentor, and human being.
+        */}
+        I am on long-term disability. While I hope to eventually return to work, for the time being, I am focused on my
+        health and am not open to new opportunities.
       </div>
 
       <div className={'row'}>
@@ -31,8 +33,16 @@ const index = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 
-export default index;
+Page.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      {page}
+    </Layout>
+  );
+}
+
+export default Page;

@@ -1,0 +1,21 @@
+$prefix: stebleton-;
+
+$sapphire: #1d3557;
+$leather-shade-blue: #457b9d;
+$almost-white: #f1faee;
+$weeby-blue: #a8dadc;
+
+$font-family-sans-serif:
+  "Nanum Gothic",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
+
+$body-color: $sapphire;
+$body-bg: shade-color($almost-white, 0%);
+
+$link-color: $leather-shade-blue;

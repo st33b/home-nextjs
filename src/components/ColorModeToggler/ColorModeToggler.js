@@ -1,5 +1,5 @@
-import {useThemeContext} from "../../utils/ThemeContext";
-import {useClientReady} from "../../utils/misc";
+import {useThemeContext} from "../../js/ThemeContext";
+import {useClientReady} from "../../js/misc";
 
 import classes from './ColorModeToggler.module.scss';
 
