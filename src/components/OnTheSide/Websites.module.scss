@@ -15,7 +15,9 @@
     margin: 0.5rem 0 1rem;
 
     .Screenshot {
-      margin: 0 auto;
+    }
+    .MobileScreenshot {
+      max-width: 250px;
     }
   }
 
