@@ -3,25 +3,12 @@
     margin-bottom: 1rem;
   }
   .Employer {
-    border-left: 4px solid #e63946;
-    padding-left: 1.5rem;
-    @media (prefers-color-scheme: dark) {
-      border-left-color: #e6394677;
-    }
-
     .Name {
     }
     .Role {
-      background-repeat: no-repeat;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23e63946' viewBox='0 0 16 16'%3E%3Cpath d='m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z'/%3E%3C/svg%3E");
-      background-position: 0 5px;
       margin-left: -1.9rem;
       padding-left: 3rem;
       padding-bottom: 1rem;
-
-      @media (prefers-color-scheme: dark) {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23e6394677' viewBox='0 0 16 16'%3E%3Cpath d='m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z'/%3E%3C/svg%3E");
-      }
 
       .Title {
         font-weight: bold;
@@ -58,11 +45,8 @@
 
 @media (min-width: 576px) {
   .Experience {
-    border-left: 4px solid #e63946;
-    padding-left: 1.5rem;
-    @media (prefers-color-scheme: dark) {
-      border-left-color: #e6394677;
-    }
+    border-left: 4px solid var(--stebleton-divider-color);
+    padding-left: 1rem;
 
     h3 {
       font-weight: 600;
@@ -72,20 +56,11 @@
     .Employer {
       border-left: none;
       padding-left: 0;
-      border-bottom: 1px solid #1d3557cc;
+      border-bottom: 1px dotted var(--stebleton-body-color);
       margin-bottom: 1rem;
       padding-bottom: 0.5rem;
 
       .Role {
-        //background-repeat: no-repeat;
-        //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23e63946' viewBox='0 0 16 16'%3E%3Cpath d='m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z'/%3E%3C/svg%3E");
-        //background-position: 0 5px;
-        //margin-left: -1.9rem;
-        //padding-left: 1.9rem;
-        //
-        //@media (prefers-color-scheme: dark) {
-        //  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23e6394677' viewBox='0 0 16 16'%3E%3Cpath d='m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z'/%3E%3C/svg%3E");
-        //}
 
         .Details {
           .Title {

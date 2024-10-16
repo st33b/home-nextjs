@@ -8,7 +8,7 @@ import Contact from "@/components/Contact/Contact";
 const Page = () => {
   return (
     <>
-      <div className={`d-none d-sm-block mx-auto my-3 p-2 w-75 text-center border border-dark-subtle rounded`}>
+      <div className={`d-none d-sm-block mx-auto my-3 p-2 w-75 text-center`}  id={'seeking'}>
         {/*
         Seeking an individual contributor role with a mission-driven organization, where I will have the opportunity
         to grow and stretch my skills as an architect, developer, mentor, and human being.

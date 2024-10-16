@@ -1,7 +1,6 @@
 .Contact {
   ul {
     list-style: none;
-    padding: 0;
     font-size: 0.9rem;
     .Code {
       font-family: "Anonymous Pro", monospace;
@@ -11,15 +10,7 @@
       padding-left: 0;
     }
     .Link {
-      color: #1d3557;
-      border: 1px solid #1d3557;
-      @media (prefers-color-scheme: dark) {
-        border-color: #f1faeedd;
-        color: #f1faeedd;
-      }
-      i {
-        padding: 0;
-      }
+      border: 1px solid var(--stebleton-body-color);
     }
   }
 }

@@ -14,6 +14,7 @@ const Skills = () => {
     'Mentorship',
     'Roadmap definition',
     'Technical vision',
+    'Psychological safety',
   ].sort();
   const recentTech = [
     'Ruby',
@@ -62,7 +63,7 @@ const Skills = () => {
 
   return (
     <div className={classes.Skills}>
-      <h3>
+      <h3 title={'Ooh, keywords! How fun!'}>
         <span className={'d-sm-none'}>
           Primary{' '}
         </span>
@@ -73,7 +74,7 @@ const Skills = () => {
         <div className={`${classes.Items} ${classes.Salient}`}>
           {salient.map((item, i) => {
             return (
-              <span key={i} className={`badge ${classes.Skill}`}>
+              <span key={i} className={`${classes.Skill}`}>
                 {item}
               </span>
             );
@@ -88,7 +89,7 @@ const Skills = () => {
         <div className={classes.Items}>
           {recentTech.map((item, i) => {
             return (
-              <span key={i} className={`badge rounded-pill ${classes.Skill}`}>
+              <span key={i} className={`${classes.Skill}`}>
                 {item}
               </span>
             );
@@ -103,7 +104,7 @@ const Skills = () => {
         <div className={classes.Items}>
           {leadership.map((item, i) => {
             return (
-              <span key={i} className={`badge rounded-pill ${classes.Skill}`}>
+              <span key={i} className={`${classes.Skill}`}>
                 {item}
               </span>
             );
@@ -118,7 +119,7 @@ const Skills = () => {
         <div className={classes.Items}>
           {oldTech.map((item, i) => {
             return (
-              <span key={i} className={`badge rounded-pill ${classes.Skill}`}>
+              <span key={i} className={`${classes.Skill}`}>
                 {item}
               </span>
             );

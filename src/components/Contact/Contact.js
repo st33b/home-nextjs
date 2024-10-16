@@ -6,7 +6,7 @@ const Contact = () => {
       <h3 className={'d-none d-sm-block'}>
         Contact
       </h3>
-      <ul className={'d-flex justify-content-between d-sm-block'}>
+      <ul className={'d-flex justify-content-between d-sm-block p-0'}>
         <li className={'me-auto'}>
           <i className={"bi-geo-alt-fill d-sm-none"} aria-hidden={true}/>
           Atlanta, GA
@@ -20,7 +20,7 @@ const Contact = () => {
             <span className={'visually-hidden'}>
               Email me
             </span>
-            <i className="bi-envelope-fill" aria-hidden={true} />
+            <i className="bi-envelope-fill p-0" aria-hidden={true} />
           </a>
         </li>
         <li className={'d-none d-sm-block'}>
