@@ -141,7 +141,7 @@ const Tournio = () => {
         Tournament directors can see all registered teams and bowlers, make changes, move bowlers from one team to another, create and confirm free entries, and export bowler data in both CSV and XML formats, the latter of which is designed for import into tournament software used by many IGBO tournaments.
       </p>
       <p>
-        To date, fourteen different tournaments across the country have used Tournio, including IGBO Annual 2024, which registered nearly 350 bowlers. As the system has matured and word of mouth has spread, it has become a viable alternative to the registration solution provided by IGBO&apos;s technology partner at no cost to the tournaments themselves.
+        To date, fourteen different tournaments across the country have used Tournio, including IGBO Annual 2024, which registered nearly 350 bowlers. As the system has matured and word of mouth has spread, it has become a viable alternative to the no-cost registration solution provided by IGBO&apos;s technology partner.
       </p>
       <ul className={classes.Github}>
         <li>

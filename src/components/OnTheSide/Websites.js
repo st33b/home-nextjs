@@ -97,6 +97,7 @@ const Websites = () => {
           {websites.map((tourn, i) => (
             <Carousel.Item key={'screenshot-desktop-' + i}>
               <a href={tourn.href}
+                 rel={'noreferrer'}
                  target={"_blank"}>
                 {theme.active === 'light' && (
                   <Image src={tourn.desktop.light}
@@ -119,6 +120,7 @@ const Websites = () => {
             <Carousel.Item key={'screenshot-mobile-' + i}>
               <a href={tourn.href}
                  className={''}
+                 rel={'noreferrer'}
                  target={"_blank"}>
                 {theme.active === 'light' && (
                   <Image src={tourn.mobile.light}
@@ -141,8 +143,8 @@ const Websites = () => {
       </div>
 
       <p>
-        I maintain the informational websites for several IGBO-affiliated bowling tournaments. You&apos;ll see a family resemblance among them, since&mdash;in all honesty&mdash;I&apos;m not much of a visual designer. That said, I've tried to give them some local and iconographic personality.
-        </p>
+        I maintain the informational websites for several IGBO-affiliated bowling tournaments. You&apos;ll see a family resemblance among them, since&mdash;in all honesty&mdash;I&apos;m not much of a visual designer. That said, I&apos;ve tried to give them some local and iconographic personality.
+      </p>
       <p>
         I aim to put usability above all else, and once I find a layout that works well, I tend to follow the if-it-ain&apos;t-broke-don&apos;t-fix-it rule. With tournament websites, the user&apos;s goal is almost always to find a piece of information as quickly as possible. The easier I can make that task, the better.
       </p>
@@ -151,6 +153,7 @@ const Websites = () => {
         {websites.map((deets, i) => (
           <li key={i}>
             <a title={deets.fullTitle ? deets.fullTitle : deets.title}
+               rel={'noreferrer'}
                target={'_blank'}
                href={deets.href}>
               {deets.title} ({deets.locale})
