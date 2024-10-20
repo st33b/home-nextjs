@@ -1,0 +1,28 @@
+.Websites {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .Carousel {
+    width: 100%;
+    margin: 0.5rem 0 1rem;
+
+    .Screenshot {
+    }
+    .MobileScreenshot {
+      max-width: 250px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .Carousel {
+      width: 60%;
+      margin: 0 0 1rem 1rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .Carousel {
+      width: 50%;
+    }
+  }
+}

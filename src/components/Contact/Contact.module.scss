@@ -1,0 +1,37 @@
+.Contact {
+  ul {
+    list-style: none;
+    font-size: 0.9rem;
+    .Code {
+      font-family: "Anonymous Pro", monospace;
+    }
+    i {
+      padding-right: 0.5rem;
+      padding-left: 0;
+    }
+    .Link {
+      border: 1px solid var(--stebleton-body-color);
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .Contact {
+    text-align: right;
+
+    h3 {
+      font-weight: 600;
+    }
+
+    ul {
+      font-size: 1rem;
+      .Link {
+        border: none;
+      }
+      i {
+        padding-right: 0;
+        padding-left: 0.5rem;
+      }
+    }
+  }
+}

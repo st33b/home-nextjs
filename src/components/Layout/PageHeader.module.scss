@@ -1,0 +1,53 @@
+.PageHeader {
+  .Name {
+    h1 {
+      margin: 0.25rem 0;
+    }
+  }
+  .Roles {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 200;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+
+    li:after {
+      font-family: 'Bootstrap-icons';
+      content: '\F309';
+    }
+    li:last-child:after {
+      color: transparent;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .Name {
+      h1 {
+        margin: 1rem 0;
+      }
+    }
+
+    .Roles {
+      font-size: 1.25rem;
+      padding: 0.75rem 0;
+      margin-bottom: 1rem;
+
+      background-color: var(--stebleton-role-bg);
+      @media (prefers-color-scheme: dark) {
+        font-weight: 300;
+      }
+
+      li {
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
+        border-right: 1px solid var(--stebleton-body-color);
+      }
+      li:after {
+        content: none;
+      }
+      li:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
