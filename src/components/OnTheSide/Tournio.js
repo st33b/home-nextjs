@@ -1,78 +1,71 @@
-import {useEffect, useState} from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
+
+import {useThemeContext} from "@/js/ThemeContext";
+import {useClientReady} from "@/js/misc";
 
 import LogoImage from "../../images/tournio-logo.png";
 import LogoImageDark from "../../images/tournio-logo-inverted-gray.png";
 
-import dirDesktopDark from "../../images/tournio_screenshots/director-desktop-dark.png";
-import dirDesktopLight from "../../images/tournio_screenshots/director-desktop-light.png";
-import dirMobileDark from "../../images/tournio_screenshots/director-mobile-dark.png";
-import dirMobileLight from "../../images/tournio_screenshots/director-mobile-light.png";
-import regCartDark from "../../images/tournio_screenshots/registration-cart-dark.png";
-import regCartLight from "../../images/tournio_screenshots/registration-cart-light.png";
-import regFormDark from "../../images/tournio_screenshots/registration-form-dark.png";
-import regFormLight from "../../images/tournio_screenshots/registration-form-light.png";
-import regFrontDark from "../../images/tournio_screenshots/registration-front-dark.png";
-import regFrontLight from "../../images/tournio_screenshots/registration-front-light.png";
+// import dirDesktopDark from "../../images/tournio_screenshots/director-desktop-dark.png";
+// import dirDesktopLight from "../../images/tournio_screenshots/director-desktop-light.png";
+// import dirMobileDark from "../../images/tournio_screenshots/director-mobile-dark.png";
+// import dirMobileLight from "../../images/tournio_screenshots/director-mobile-light.png";
+// import regCartDark from "../../images/tournio_screenshots/registration-cart-dark.png";
+// import regCartLight from "../../images/tournio_screenshots/registration-cart-light.png";
+// import regFormDark from "../../images/tournio_screenshots/registration-form-dark.png";
+// import regFormLight from "../../images/tournio_screenshots/registration-form-light.png";
+// import regFrontDark from "../../images/tournio_screenshots/registration-front-dark.png";
+// import regFrontLight from "../../images/tournio_screenshots/registration-front-light.png";
+import tournioMobileDark from '@/images/tournio_screenshots/tournio-mobile-dark.jpeg';
+import tournioMobileLight from '@/images/tournio_screenshots/tournio-mobile-light.jpeg';
+import tournioDesktopDark from '@/images/tournio_screenshots/tournio-desktop-dark.jpeg';
+import tournioDesktopLight from '@/images/tournio_screenshots/tournio-desktop-light.jpeg';
 
 import classes from './Tournio.module.scss';
 
 const Tournio = () => {
-  const [scheme, setScheme] = useState('light');
-  useEffect(() => {
-    if (!window) {
-      return;
-    }
-    if (window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setScheme('dark');
+  const {theme} = useThemeContext();
 
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener(
-        'change', event => {
-          if (event.matches) {
-            setScheme('dark');
-          }
-        }
-      );
+  const ready = useClientReady();
+  if (!ready) {
+    return null;
+  }
 
-      window.matchMedia('(prefers-color-scheme: light)').addEventListener(
-        'change', event => {
-          if (event.matches) {
-            setScheme('light');
-          }
-        }
-      );
-    }
-  }, []);
-
-  const screenshots = [
-    {
-      light: regFrontLight,
-      dark: regFrontDark,
-      title: "Screenshot of a tournament's registration front page",
-    },
-    {
-      light: regFormLight,
-      dark: regFormDark,
-      title: "Screenshot of a tournament's registration form",
-    },
-    {
-      light: regCartLight,
-      dark: regCartDark,
-      title: "Screenshot of a bowler's shopping cart",
-    },
-    {
-      light: dirDesktopLight,
-      dark: dirDesktopDark,
-      title: "Screenshot of the director's interface, as seen on desktop",
-    },
-    {
-      light: dirMobileLight,
-      dark: dirMobileDark,
-      title: "Screenshot of the director's interface, as seen on mobile",
-    },
-  ];
+  const screenshots = {
+    desktop: [
+      {
+        light: {
+          key: 'tournio-desktop-light',
+          src: tournioDesktopLight,
+          alt: 'Tournio in light mode on a larger device',
+          title: 'Tournio as seen in light mode on a larger device',
+        },
+        dark: {
+          key: 'tournio-desktop-dark',
+          src: tournioDesktopDark,
+          alt: 'Tournio in dark mode on a larger device',
+          title: 'Tournio as seen in dark mode on a larger device',
+        },
+      },
+    ],
+    mobile: [
+      {
+        light: {
+          key: 'tournio-mobile-light',
+          src: tournioMobileLight,
+          alt: 'Tournio in light mode on a mobile device',
+          title: 'Tournio as seen in light mode on a mobile device',
+        },
+        dark: {
+          key: 'tournio-mobile-dark',
+          src: tournioMobileDark,
+          alt: 'Tournio in dark mode on a mobile device',
+          title: 'Tournio as seen in dark mode on a mobile device',
+        },
+      },
+    ],
+  };
 
   return (
     <div className={classes.Tournio}>
@@ -80,17 +73,15 @@ const Tournio = () => {
         <h2 className={'visually-hidden'}>
           Tournio
         </h2>
-        {scheme === 'light' && <Image src={LogoImage}
+        {theme.active === 'light' && <Image src={LogoImage}
                                       alt={'Tournio logo image'}
                                       className={'img-fluid'}
         />}
-        {scheme === 'dark' && <Image src={LogoImageDark}
+        {theme.active === 'dark' && <Image src={LogoImageDark}
                                      className={'img-fluid'}
                                      alt={'Tournio logo image'}
         />}
       </div>
-
-      {/* Carousel of images here */}
 
       <p>
         I build and maintain{' '}
@@ -106,31 +97,35 @@ const Tournio = () => {
       </p>
 
       <div className={`${classes.Carousel} float-sm-end`}>
-        <Carousel fade indicators={false} controls={false} className={'shadow'}>
-          {screenshots.map((img, i) => (
-            <Carousel.Item key={i + 1}>
-              {scheme === 'light' && (
-                <a href={img.light.src}
-                   target={"_new"}>
-                  <Image src={img.light}
-                         title={img.title}
-                         alt={img.title}
+        <Carousel fade indicators={false} controls={true} className={'shadow text-center'}>
+          {screenshots.desktop.map((deets, i) => (
+            <Carousel.Item key={'screenshot-desktop-' + i}>
+              <a href={deets[theme.active].src}
+                 rel={'noreferrer'}
+                 target={"_blank"}>
+                  <Image src={deets[theme.active].src}
+                         title={deets[theme.active].title}
+                         alt={deets[theme.active].alt}
                          className={`${classes.Screenshot} img-fluid w-100`}
                   />
-                </a>
-              )}
-              {scheme === 'dark' && (
-                <a href={img.dark.src}
-                   target={"_new"}>
-                  <Image src={img.dark}
-                         title={img.title}
-                         alt={img.title}
-                         className={`${classes.Screenshot} img-fluid w-100`}
-                  />
-                </a>
-              )}
+              </a>
             </Carousel.Item>
           ))}
+
+          {screenshots.mobile.map((deets, i) => (
+            <Carousel.Item key={'screenshot-mobile-' + i}>
+              <a href={deets[theme.active].src}
+                 rel={'noreferrer'}
+                 target={"_blank"}>
+                <Image src={deets[theme.active].src}
+                       title={deets[theme.active].title}
+                       alt={deets[theme.active].alt}
+                       className={`img-fluid ${classes.Screenshot} ${classes.MobileScreenshot}`}
+                />
+              </a>
+            </Carousel.Item>
+          ))}
+
         </Carousel>
       </div>
 
