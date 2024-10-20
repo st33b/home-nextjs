@@ -15,20 +15,10 @@ const Omada = () => {
         </h5>
         <p className={classes.Dates}>
           2021-2023
-          <sup>*</sup>
         </p>
         <div className={classes.Details}>
-          <div className={classes.Responsibilities}>
-            <p>
-              Serving as the connective tissue between Omada&apos;s business and technical teams, with a focus on patient
-              identity at Omada: ensuring a coherent and complete view of the patient as a whole person, the better to
-              support Omada&apos;s multi-product platform offering. This includes interoperability within Omada&apos;s ecosystem
-              as well as externally, such as EHR data sharing.
-            </p>
-          </div>
           <p className={classes.Footnote}>
-            <sup>*</sup>
-            I went on medical leave shortly after moving into this role.
+            I went on medical leave shortly after moving into this role in 2021. With the exception of a few weeks in 2022, I was unable to return to work, and my employment with Omada officially ended in January, 2023.
           </p>
         </div>
       </div>
